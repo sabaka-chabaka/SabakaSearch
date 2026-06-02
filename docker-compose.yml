@@ -59,7 +59,7 @@ services:
 
   front:
     build:
-      context: ../front
+      context: /front
       dockerfile: Dockerfile
     container_name: sabaka_front
     restart: unless-stopped
