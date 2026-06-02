@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="SabakaSearch.API/SabakaSearch.API.csproj" />
   <Project Path="SabakaSearch.Domain/SabakaSearch.Domain.csproj" />
   <Project Path="SabakaSearch.Infrastructure/SabakaSearch.Infrastructure.csproj" />
 </Solution>
