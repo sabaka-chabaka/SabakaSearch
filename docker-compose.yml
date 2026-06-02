@@ -57,6 +57,17 @@ services:
       Cache__PopularQueriesTtlMinutes: "5"
       Cache__UserHistoryTtlMinutes: "2"
 
+  front:
+    build:
+      context: ../front
+      dockerfile: Dockerfile
+    container_name: sabaka_front
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "80:80"
+
 volumes:
   postgres_data:
   redis_data:
