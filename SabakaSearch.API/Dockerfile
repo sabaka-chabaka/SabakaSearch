@@ -17,8 +17,7 @@ RUN dotnet publish SabakaSearch.API/SabakaSearch.API.csproj \
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 WORKDIR /app
 
-RUN adduser --disabled-password --no-create-home appuser && chown appuser /app
-USER appuser
+USER app
 
 COPY --from=build /app/publish .
 
